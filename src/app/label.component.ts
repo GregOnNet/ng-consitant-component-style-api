@@ -11,7 +11,7 @@ import { tw } from './tw';
   template: `<ng-content></ng-content>`
 })
 export class LabelComponent {
-  #classDefaults = tw('p-2 text-red-500');
+  #classDefaults = tw('p-2 text-slate-600');
 
   class = input<string>('');
 
