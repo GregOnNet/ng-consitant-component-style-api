@@ -1,17 +1,14 @@
 import { Component, computed, input } from '@angular/core';
 import { twMerge } from 'tailwind-merge';
-import { tw } from './tw';
 
 @Component({
   selector: 'app-label',
   standalone: true,
-  host: {
-    '[class]': 'hostClass()'
-  },
+  host: { '[class]': 'hostClass()' },
   template: `<ng-content></ng-content>`
 })
 export class LabelComponent {
-  #classDefaults = tw('p-2 text-slate-600');
+  #classDefaults = 'p-2 text-slate-600';
 
   class = input<string>('');
 
